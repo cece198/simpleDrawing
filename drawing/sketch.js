@@ -11,6 +11,7 @@ function setup() {
 }
 
 function draw() {
+  b = b + 1;
   noStroke();
   fill(r, g, b);
   circle(mouseX, mouseY, 25);
