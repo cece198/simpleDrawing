@@ -1,6 +1,6 @@
-var r = 0;
-var g = 80;
-var b = 100;
+var myRed = 200;
+var myGreen = 0;
+var myBlue = 255;
 
 function circle(x, y, size) {
   ellipse(x, y, size, size);
@@ -8,15 +8,18 @@ function circle(x, y, size) {
 
 function setup() {
   createCanvas(600,400);
+  
 }
 
 function draw() {
-  b = b + 1;
   noStroke();
-  fill(r, g, b);
+  fill(myRed, myGreen, myBlue);
   circle(mouseX, mouseY, 25);
-}
-
-function mousePressed() {
-  clear();
+  myRed = myRed + 0.5;
+  myBlue = myBlue - 1;
+  
+  if(myRed >= 255) {
+    myRed = 200;
+    myBlue = 255;
+  }
 }
