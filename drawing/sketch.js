@@ -39,13 +39,11 @@ function draw() {
     myBlue = 255;
   }
   
-  for(var i=0; i<width; i+=100){
-    fill(10,0,10);
-    circle(i+20, 100, 50);
-    fill(0,200,0);
-    circle(i+20, 100, 25);
-    fill(30,10,60);
-    circle(i+20, 100, 13);
+  for(var r=0; r<width; r+=100){
+    for(var c=0; c<height; c+=100) {
+      fill(100,0,100);
+      circle(r+20, c-20, 50);
+    }
   }
   
   //if (mouseIsPressed == true) {
