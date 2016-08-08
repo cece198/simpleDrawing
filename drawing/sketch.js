@@ -38,6 +38,16 @@ function draw() {
     myRed = 200;
     myBlue = 255;
   }
+  
+  for(var i=0; i<width; i+=100){
+    fill(10,0,10);
+    circle(i+20, 100, 50);
+    fill(0,200,0);
+    circle(i+20, 100, 25);
+    fill(30,10,60);
+    circle(i+20, 100, 13);
+  }
+  
   //if (mouseIsPressed == true) {
    // noStroke();
    // fill(0, 0, 0);
